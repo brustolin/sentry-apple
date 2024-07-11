@@ -14,7 +14,7 @@ public class ExperimentalOptions : OptionsBase {
 @objc(SentryOptionsBase)
 @objcMembers
 public class OptionsBase : NSObject {
-    //MARK: - Mechanism to allow integrations to add new options to the SDK
+    //Mechanism to allow integrations to add new options to the SDK
     //This is meant to be used by other integrations and not users
     //see "SentryTests/SessionReplay/SentrySessionReplayTests.swift" or
     //"SentryTests/Performance/SentryPerformanceOptionsTests.swift"
