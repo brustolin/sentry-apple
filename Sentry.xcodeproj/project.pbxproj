@@ -1,0 +1,1114 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D828597C2C4049F4009A28AA /* Sentry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D82859732C4049F4009A28AA /* Sentry.framework */; };
+		D82859812C4049F4009A28AA /* SentrySessionReplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82859802C4049F4009A28AA /* SentrySessionReplayTests.swift */; };
+		D82859822C4049F4009A28AA /* Sentry.h in Headers */ = {isa = PBXBuildFile; fileRef = D82859762C4049F4009A28AA /* Sentry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D82859A62C40566C009A28AA /* SentryCore.h in Headers */ = {isa = PBXBuildFile; fileRef = D82859A52C40566C009A28AA /* SentryCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D82859AC2C40570E009A28AA /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82859AB2C40570E009A28AA /* Options.swift */; };
+		D82859AF2C405FA6009A28AA /* IntegrationBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82859AE2C405FA6009A28AA /* IntegrationBase.swift */; };
+		D82859B12C406083009A28AA /* IntegrationOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82859B02C406083009A28AA /* IntegrationOption.swift */; };
+		D82859BA2C406396009A28AA /* SentrySessionReplay.h in Headers */ = {isa = PBXBuildFile; fileRef = D82859B92C406396009A28AA /* SentrySessionReplay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D82859BF2C4063A4009A28AA /* SentryCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D82859A32C40566C009A28AA /* SentryCore.framework */; platformFilter = ios; };
+		D82859C42C4063C2009A28AA /* SentryCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D82859A32C40566C009A28AA /* SentryCore.framework */; };
+		D82859C52C4063C2009A28AA /* SentryCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D82859A32C40566C009A28AA /* SentryCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D82859C82C4063C2009A28AA /* SentrySessionReplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D82859B72C406396009A28AA /* SentrySessionReplay.framework */; platformFilter = ios; };
+		D82859C92C4063C2009A28AA /* SentrySessionReplay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D82859B72C406396009A28AA /* SentrySessionReplay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D82859D52C406434009A28AA /* SentryPerformance.h in Headers */ = {isa = PBXBuildFile; fileRef = D82859D42C406434009A28AA /* SentryPerformance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D82859D92C40643E009A28AA /* SentryPerformance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D82859D22C406434009A28AA /* SentryPerformance.framework */; };
+		D82859DA2C40643E009A28AA /* SentryPerformance.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D82859D22C406434009A28AA /* SentryPerformance.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D82859DD2C406444009A28AA /* SentryCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D82859A32C40566C009A28AA /* SentryCore.framework */; };
+		D82859EE2C406550009A28AA /* Import.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82859E62C4064CC009A28AA /* Import.swift */; };
+		D82859EF2C406554009A28AA /* SessionReplayOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82859E22C4064A0009A28AA /* SessionReplayOptions.swift */; };
+		D82859F02C40655C009A28AA /* SentryPerformanceOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82859E42C4064B1009A28AA /* SentryPerformanceOptions.swift */; };
+		D82859FB2C407349009A28AA /* Import.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82859FA2C407349009A28AA /* Import.swift */; };
+		D82859FE2C407531009A28AA /* SentryPerformanceOptionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82859FD2C407531009A28AA /* SentryPerformanceOptionsTest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D828597D2C4049F4009A28AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D828596A2C4049F4009A28AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D82859722C4049F4009A28AA;
+			remoteInfo = Sentry;
+		};
+		D82859C12C4063A4009A28AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D828596A2C4049F4009A28AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D82859A22C40566C009A28AA;
+			remoteInfo = SentryCore;
+		};
+		D82859C62C4063C2009A28AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D828596A2C4049F4009A28AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D82859A22C40566C009A28AA;
+			remoteInfo = SentryCore;
+		};
+		D82859CA2C4063C2009A28AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D828596A2C4049F4009A28AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D82859B62C406396009A28AA;
+			remoteInfo = SentrySessionReplay;
+		};
+		D82859DB2C40643E009A28AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D828596A2C4049F4009A28AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D82859D12C406434009A28AA;
+			remoteInfo = SentryPerformance;
+		};
+		D82859DF2C406444009A28AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D828596A2C4049F4009A28AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D82859A22C40566C009A28AA;
+			remoteInfo = SentryCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D82859CC2C4063C2009A28AA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D82859C52C4063C2009A28AA /* SentryCore.framework in Embed Frameworks */,
+				D82859C92C4063C2009A28AA /* SentrySessionReplay.framework in Embed Frameworks */,
+				D82859DA2C40643E009A28AA /* SentryPerformance.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D82859732C4049F4009A28AA /* Sentry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sentry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D82859762C4049F4009A28AA /* Sentry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sentry.h; sourceTree = "<group>"; };
+		D828597B2C4049F4009A28AA /* SentryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SentryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D82859802C4049F4009A28AA /* SentrySessionReplayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentrySessionReplayTests.swift; sourceTree = "<group>"; };
+		D82859A32C40566C009A28AA /* SentryCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SentryCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D82859A52C40566C009A28AA /* SentryCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SentryCore.h; sourceTree = "<group>"; };
+		D82859AB2C40570E009A28AA /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		D82859AE2C405FA6009A28AA /* IntegrationBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationBase.swift; sourceTree = "<group>"; };
+		D82859B02C406083009A28AA /* IntegrationOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationOption.swift; sourceTree = "<group>"; };
+		D82859B72C406396009A28AA /* SentrySessionReplay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SentrySessionReplay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D82859B92C406396009A28AA /* SentrySessionReplay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SentrySessionReplay.h; sourceTree = "<group>"; };
+		D82859D22C406434009A28AA /* SentryPerformance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SentryPerformance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D82859D42C406434009A28AA /* SentryPerformance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SentryPerformance.h; sourceTree = "<group>"; };
+		D82859E22C4064A0009A28AA /* SessionReplayOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionReplayOptions.swift; sourceTree = "<group>"; };
+		D82859E42C4064B1009A28AA /* SentryPerformanceOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentryPerformanceOptions.swift; sourceTree = "<group>"; };
+		D82859E62C4064CC009A28AA /* Import.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Import.swift; sourceTree = "<group>"; };
+		D82859FA2C407349009A28AA /* Import.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Import.swift; sourceTree = "<group>"; };
+		D82859FD2C407531009A28AA /* SentryPerformanceOptionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentryPerformanceOptionsTest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D82859702C4049F4009A28AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82859C42C4063C2009A28AA /* SentryCore.framework in Frameworks */,
+				D82859C82C4063C2009A28AA /* SentrySessionReplay.framework in Frameworks */,
+				D82859D92C40643E009A28AA /* SentryPerformance.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82859782C4049F4009A28AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D828597C2C4049F4009A28AA /* Sentry.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82859A02C40566C009A28AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82859B42C406396009A28AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82859BF2C4063A4009A28AA /* SentryCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82859CF2C406434009A28AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82859DD2C406444009A28AA /* SentryCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D82859692C4049F4009A28AA = {
+			isa = PBXGroup;
+			children = (
+				D82859752C4049F4009A28AA /* Sources */,
+				D828597F2C4049F4009A28AA /* SentryTests */,
+				D82859742C4049F4009A28AA /* Products */,
+				D82859BE2C4063A4009A28AA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D82859742C4049F4009A28AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D82859732C4049F4009A28AA /* Sentry.framework */,
+				D828597B2C4049F4009A28AA /* SentryTests.xctest */,
+				D82859A32C40566C009A28AA /* SentryCore.framework */,
+				D82859B72C406396009A28AA /* SentrySessionReplay.framework */,
+				D82859D22C406434009A28AA /* SentryPerformance.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D82859752C4049F4009A28AA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D82859AA2C40567B009A28AA /* Sentry */,
+				D82859972C40563C009A28AA /* SentryCore */,
+				D82859B82C406396009A28AA /* SentrySessionReplay */,
+				D82859D32C406434009A28AA /* SentryPerformance */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D828597F2C4049F4009A28AA /* SentryTests */ = {
+			isa = PBXGroup;
+			children = (
+				D82859F12C40665D009A28AA /* SessionReplay */,
+				D82859FC2C407511009A28AA /* SentryPerformance */,
+			);
+			path = SentryTests;
+			sourceTree = "<group>";
+		};
+		D82859972C40563C009A28AA /* SentryCore */ = {
+			isa = PBXGroup;
+			children = (
+				D82859AD2C405F95009A28AA /* IntegrationBase */,
+				D82859A52C40566C009A28AA /* SentryCore.h */,
+				D82859AB2C40570E009A28AA /* Options.swift */,
+			);
+			path = SentryCore;
+			sourceTree = "<group>";
+		};
+		D82859AA2C40567B009A28AA /* Sentry */ = {
+			isa = PBXGroup;
+			children = (
+				D82859762C4049F4009A28AA /* Sentry.h */,
+			);
+			path = Sentry;
+			sourceTree = "<group>";
+		};
+		D82859AD2C405F95009A28AA /* IntegrationBase */ = {
+			isa = PBXGroup;
+			children = (
+				D82859AE2C405FA6009A28AA /* IntegrationBase.swift */,
+				D82859B02C406083009A28AA /* IntegrationOption.swift */,
+			);
+			path = IntegrationBase;
+			sourceTree = "<group>";
+		};
+		D82859B82C406396009A28AA /* SentrySessionReplay */ = {
+			isa = PBXGroup;
+			children = (
+				D82859B92C406396009A28AA /* SentrySessionReplay.h */,
+				D82859E62C4064CC009A28AA /* Import.swift */,
+				D82859E22C4064A0009A28AA /* SessionReplayOptions.swift */,
+			);
+			path = SentrySessionReplay;
+			sourceTree = "<group>";
+		};
+		D82859BE2C4063A4009A28AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D82859D32C406434009A28AA /* SentryPerformance */ = {
+			isa = PBXGroup;
+			children = (
+				D82859D42C406434009A28AA /* SentryPerformance.h */,
+				D82859FA2C407349009A28AA /* Import.swift */,
+				D82859E42C4064B1009A28AA /* SentryPerformanceOptions.swift */,
+			);
+			path = SentryPerformance;
+			sourceTree = "<group>";
+		};
+		D82859F12C40665D009A28AA /* SessionReplay */ = {
+			isa = PBXGroup;
+			children = (
+				D82859802C4049F4009A28AA /* SentrySessionReplayTests.swift */,
+			);
+			path = SessionReplay;
+			sourceTree = "<group>";
+		};
+		D82859FC2C407511009A28AA /* SentryPerformance */ = {
+			isa = PBXGroup;
+			children = (
+				D82859FD2C407531009A28AA /* SentryPerformanceOptionsTest.swift */,
+			);
+			path = SentryPerformance;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D828596E2C4049F4009A28AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82859822C4049F4009A28AA /* Sentry.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D828599E2C40566C009A28AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82859A62C40566C009A28AA /* SentryCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82859B22C406396009A28AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82859BA2C406396009A28AA /* SentrySessionReplay.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82859CD2C406434009A28AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82859D52C406434009A28AA /* SentryPerformance.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D82859722C4049F4009A28AA /* Sentry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D82859852C4049F4009A28AA /* Build configuration list for PBXNativeTarget "Sentry" */;
+			buildPhases = (
+				D828596E2C4049F4009A28AA /* Headers */,
+				D828596F2C4049F4009A28AA /* Sources */,
+				D82859702C4049F4009A28AA /* Frameworks */,
+				D82859712C4049F4009A28AA /* Resources */,
+				D82859CC2C4063C2009A28AA /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D82859C72C4063C2009A28AA /* PBXTargetDependency */,
+				D82859CB2C4063C2009A28AA /* PBXTargetDependency */,
+				D82859DC2C40643E009A28AA /* PBXTargetDependency */,
+			);
+			name = Sentry;
+			productName = Sentry;
+			productReference = D82859732C4049F4009A28AA /* Sentry.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D828597A2C4049F4009A28AA /* SentryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D82859882C4049F4009A28AA /* Build configuration list for PBXNativeTarget "SentryTests" */;
+			buildPhases = (
+				D82859772C4049F4009A28AA /* Sources */,
+				D82859782C4049F4009A28AA /* Frameworks */,
+				D82859792C4049F4009A28AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D828597E2C4049F4009A28AA /* PBXTargetDependency */,
+			);
+			name = SentryTests;
+			productName = SentryTests;
+			productReference = D828597B2C4049F4009A28AA /* SentryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D82859A22C40566C009A28AA /* SentryCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D82859A72C40566C009A28AA /* Build configuration list for PBXNativeTarget "SentryCore" */;
+			buildPhases = (
+				D828599E2C40566C009A28AA /* Headers */,
+				D828599F2C40566C009A28AA /* Sources */,
+				D82859A02C40566C009A28AA /* Frameworks */,
+				D82859A12C40566C009A28AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SentryCore;
+			productName = SentryCore;
+			productReference = D82859A32C40566C009A28AA /* SentryCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D82859B62C406396009A28AA /* SentrySessionReplay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D82859BB2C406396009A28AA /* Build configuration list for PBXNativeTarget "SentrySessionReplay" */;
+			buildPhases = (
+				D82859B22C406396009A28AA /* Headers */,
+				D82859B32C406396009A28AA /* Sources */,
+				D82859B42C406396009A28AA /* Frameworks */,
+				D82859B52C406396009A28AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D82859C22C4063A4009A28AA /* PBXTargetDependency */,
+			);
+			name = SentrySessionReplay;
+			productName = SentrySessionReplay;
+			productReference = D82859B72C406396009A28AA /* SentrySessionReplay.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D82859D12C406434009A28AA /* SentryPerformance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D82859D62C406434009A28AA /* Build configuration list for PBXNativeTarget "SentryPerformance" */;
+			buildPhases = (
+				D82859CD2C406434009A28AA /* Headers */,
+				D82859CE2C406434009A28AA /* Sources */,
+				D82859CF2C406434009A28AA /* Frameworks */,
+				D82859D02C406434009A28AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D82859E02C406444009A28AA /* PBXTargetDependency */,
+			);
+			name = SentryPerformance;
+			productName = SentryPerformance;
+			productReference = D82859D22C406434009A28AA /* SentryPerformance.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D828596A2C4049F4009A28AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					D82859722C4049F4009A28AA = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					D828597A2C4049F4009A28AA = {
+						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
+					};
+					D82859A22C40566C009A28AA = {
+						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
+					};
+					D82859B62C406396009A28AA = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					D82859D12C406434009A28AA = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = D828596D2C4049F4009A28AA /* Build configuration list for PBXProject "Sentry" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D82859692C4049F4009A28AA;
+			productRefGroup = D82859742C4049F4009A28AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D82859722C4049F4009A28AA /* Sentry */,
+				D82859A22C40566C009A28AA /* SentryCore */,
+				D82859B62C406396009A28AA /* SentrySessionReplay */,
+				D82859D12C406434009A28AA /* SentryPerformance */,
+				D828597A2C4049F4009A28AA /* SentryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D82859712C4049F4009A28AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82859792C4049F4009A28AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82859A12C40566C009A28AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82859B52C406396009A28AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82859D02C406434009A28AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D828596F2C4049F4009A28AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82859772C4049F4009A28AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82859FE2C407531009A28AA /* SentryPerformanceOptionsTest.swift in Sources */,
+				D82859812C4049F4009A28AA /* SentrySessionReplayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D828599F2C40566C009A28AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82859AC2C40570E009A28AA /* Options.swift in Sources */,
+				D82859B12C406083009A28AA /* IntegrationOption.swift in Sources */,
+				D82859AF2C405FA6009A28AA /* IntegrationBase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82859B32C406396009A28AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82859EF2C406554009A28AA /* SessionReplayOptions.swift in Sources */,
+				D82859EE2C406550009A28AA /* Import.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82859CE2C406434009A28AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82859FB2C407349009A28AA /* Import.swift in Sources */,
+				D82859F02C40655C009A28AA /* SentryPerformanceOptions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D828597E2C4049F4009A28AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D82859722C4049F4009A28AA /* Sentry */;
+			targetProxy = D828597D2C4049F4009A28AA /* PBXContainerItemProxy */;
+		};
+		D82859C22C4063A4009A28AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = D82859A22C40566C009A28AA /* SentryCore */;
+			targetProxy = D82859C12C4063A4009A28AA /* PBXContainerItemProxy */;
+		};
+		D82859C72C4063C2009A28AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D82859A22C40566C009A28AA /* SentryCore */;
+			targetProxy = D82859C62C4063C2009A28AA /* PBXContainerItemProxy */;
+		};
+		D82859CB2C4063C2009A28AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = D82859B62C406396009A28AA /* SentrySessionReplay */;
+			targetProxy = D82859CA2C4063C2009A28AA /* PBXContainerItemProxy */;
+		};
+		D82859DC2C40643E009A28AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D82859D12C406434009A28AA /* SentryPerformance */;
+			targetProxy = D82859DB2C40643E009A28AA /* PBXContainerItemProxy */;
+		};
+		D82859E02C406444009A28AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D82859A22C40566C009A28AA /* SentryCore */;
+			targetProxy = D82859DF2C406444009A28AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D82859832C4049F4009A28AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D82859842C4049F4009A28AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D82859862C4049F4009A28AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = io.sentry.Sentry;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D82859872C4049F4009A28AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = io.sentry.Sentry;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D82859892C4049F4009A28AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.sentry.SentryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D828598A2C4049F4009A28AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.sentry.SentryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D82859A82C40566C009A28AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = io.sentry.SentryCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D82859A92C40566C009A28AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = io.sentry.SentryCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D82859BC2C406396009A28AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = io.sentry.SentrySessionReplay;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D82859BD2C406396009A28AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = io.sentry.SentrySessionReplay;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D82859D72C406434009A28AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = io.sentry.SentryPerformance;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D82859D82C406434009A28AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = io.sentry.SentryPerformance;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D828596D2C4049F4009A28AA /* Build configuration list for PBXProject "Sentry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D82859832C4049F4009A28AA /* Debug */,
+				D82859842C4049F4009A28AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D82859852C4049F4009A28AA /* Build configuration list for PBXNativeTarget "Sentry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D82859862C4049F4009A28AA /* Debug */,
+				D82859872C4049F4009A28AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D82859882C4049F4009A28AA /* Build configuration list for PBXNativeTarget "SentryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D82859892C4049F4009A28AA /* Debug */,
+				D828598A2C4049F4009A28AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D82859A72C40566C009A28AA /* Build configuration list for PBXNativeTarget "SentryCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D82859A82C40566C009A28AA /* Debug */,
+				D82859A92C40566C009A28AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D82859BB2C406396009A28AA /* Build configuration list for PBXNativeTarget "SentrySessionReplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D82859BC2C406396009A28AA /* Debug */,
+				D82859BD2C406396009A28AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D82859D62C406434009A28AA /* Build configuration list for PBXNativeTarget "SentryPerformance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D82859D72C406434009A28AA /* Debug */,
+				D82859D82C406434009A28AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D828596A2C4049F4009A28AA /* Project object */;
+}
