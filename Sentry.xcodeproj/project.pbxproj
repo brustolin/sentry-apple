@@ -195,7 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				D82859F12C40665D009A28AA /* SessionReplay */,
-				D82859FC2C407511009A28AA /* SentryPerformance */,
+				D82859FC2C407511009A28AA /* Performance */,
 			);
 			path = SentryTests;
 			sourceTree = "<group>";
@@ -262,12 +262,12 @@
 			path = SessionReplay;
 			sourceTree = "<group>";
 		};
-		D82859FC2C407511009A28AA /* SentryPerformance */ = {
+		D82859FC2C407511009A28AA /* Performance */ = {
 			isa = PBXGroup;
 			children = (
 				D82859FD2C407531009A28AA /* SentryPerformanceOptionsTest.swift */,
 			);
-			path = SentryPerformance;
+			path = Performance;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
