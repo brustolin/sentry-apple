@@ -9,7 +9,7 @@ public class SentryEnvelopeHeader : NSObject {
      */
     let eventId: SentryId?
     let sdkInfo: SentrySDKInfo?
-    @property (nullable, nonatomic, readonly, copy) SentryTraceContext *traceContext;
+    //let traceContext: SentryTraceContext?
 
     /**
      * The timestamp when the event was sent from the SDK as string in RFC 3339 format. Used
