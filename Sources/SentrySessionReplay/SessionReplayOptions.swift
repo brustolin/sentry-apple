@@ -1,7 +1,7 @@
 import Foundation
 
 @objcMembers
-public class SentryReplayOptions : NSObject, IntegrationOption {
+public class SentryReplayOptions : NSObject {
     
     /**
      * Enum to define the quality of the session replay.
@@ -109,7 +109,33 @@ public class SentryReplayOptions : NSObject, IntegrationOption {
         self.sessionSampleRate = 0
         self.errorSampleRate = 0
     }
-    
+}
+
+extension SentryReplayOptions : IntegrationOption {
+    public func update(dictionary: [String : Any]) {
+        guard let replayOptions = dictionary["replayOptions"] as? [String: Any]
+        else { return }
+        
+        if let sessionSampleRate = replayOptions["sessionSampleRate"] as? NSNumber {
+            self.sessionSampleRate = sessionSampleRate.floatValue
+        }
+        
+        if let errorSampleRate = replayOptions["errorSampleRate"] as? NSNumber {
+            self.errorSampleRate = errorSampleRate.floatValue
+        }
+        
+        if let redactAllText = replayOptions["redactAllText"] as? Bool {
+            self.redactAllText = redactAllText
+        }
+        
+        if let redactAllImages = replayOptions["redactAllImages"] as? Bool {
+            self.redactAllImages = redactAllImages
+        }
+        
+        if let quality = replayOptions["quality"] as? NSNumber {
+            self.quality = .init(rawValue: quality.intValue) ?? .low
+        }
+    }
 }
 
 public extension ExperimentalOptions {

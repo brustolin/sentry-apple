@@ -14,6 +14,17 @@ public class ExperimentalOptions : OptionsBase {
 @objc(SentryOptionsBase)
 @objcMembers
 public class OptionsBase : NSObject {
+    
+    private let initializedDictionary : [String: Any]
+    
+    public override init() {
+        initializedDictionary = [:]
+    }
+    
+    init(dictionary : [String:Any]) {
+        initializedDictionary = dictionary
+    }
+    
     //Mechanism to allow integrations to add new options to the SDK
     //This is meant to be used by other integrations and not users
     //see "SentryTests/SessionReplay/SentrySessionReplayTests.swift" or
@@ -27,6 +38,7 @@ public class OptionsBase : NSObject {
         }
         set {
             let key = ObjectIdentifier(type)
+            newValue?.update(dictionary: initializedDictionary)
             integrations[key] = newValue
         }
     }

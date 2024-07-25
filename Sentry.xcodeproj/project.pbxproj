@@ -29,6 +29,12 @@
 		D82859F02C40655C009A28AA /* SentryPerformanceOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82859E42C4064B1009A28AA /* SentryPerformanceOptions.swift */; };
 		D82859FB2C407349009A28AA /* Import.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82859FA2C407349009A28AA /* Import.swift */; };
 		D82859FE2C407531009A28AA /* SentryPerformanceOptionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82859FD2C407531009A28AA /* SentryPerformanceOptionsTest.swift */; };
+		D8AE484C2C51659A0092A2A6 /* SentryTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE484B2C51659A0092A2A6 /* SentryTransport.swift */; };
+		D8AE484E2C5166120092A2A6 /* SentryDataCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE484D2C5166120092A2A6 /* SentryDataCategory.swift */; };
+		D8AE48502C5166460092A2A6 /* SentryEnvelope.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE484F2C5166460092A2A6 /* SentryEnvelope.swift */; };
+		D8AE48522C516A730092A2A6 /* SentryDiscardReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE48512C516A730092A2A6 /* SentryDiscardReason.swift */; };
+		D8AE48552C519F190092A2A6 /* SentryId.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE48542C519F190092A2A6 /* SentryId.swift */; };
+		D8AE48572C519F820092A2A6 /* SentrySDKInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE48562C519F820092A2A6 /* SentrySDKInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +117,12 @@
 		D82859E62C4064CC009A28AA /* Import.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Import.swift; sourceTree = "<group>"; };
 		D82859FA2C407349009A28AA /* Import.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Import.swift; sourceTree = "<group>"; };
 		D82859FD2C407531009A28AA /* SentryPerformanceOptionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentryPerformanceOptionsTest.swift; sourceTree = "<group>"; };
+		D8AE484B2C51659A0092A2A6 /* SentryTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentryTransport.swift; sourceTree = "<group>"; };
+		D8AE484D2C5166120092A2A6 /* SentryDataCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentryDataCategory.swift; sourceTree = "<group>"; };
+		D8AE484F2C5166460092A2A6 /* SentryEnvelope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentryEnvelope.swift; sourceTree = "<group>"; };
+		D8AE48512C516A730092A2A6 /* SentryDiscardReason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentryDiscardReason.swift; sourceTree = "<group>"; };
+		D8AE48542C519F190092A2A6 /* SentryId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentryId.swift; sourceTree = "<group>"; };
+		D8AE48562C519F820092A2A6 /* SentrySDKInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentrySDKInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,8 +206,9 @@
 		D828597F2C4049F4009A28AA /* SentryTests */ = {
 			isa = PBXGroup;
 			children = (
-				D82859F12C40665D009A28AA /* SessionReplay */,
+				D8AE48532C5179BF0092A2A6 /* Core */,
 				D82859FC2C407511009A28AA /* Performance */,
+				D82859F12C40665D009A28AA /* SessionReplay */,
 			);
 			path = SentryTests;
 			sourceTree = "<group>";
@@ -204,8 +217,11 @@
 			isa = PBXGroup;
 			children = (
 				D82859AD2C405F95009A28AA /* IntegrationBase */,
+				D8AE484A2C5163740092A2A6 /* Transport */,
 				D82859A52C40566C009A28AA /* SentryCore.h */,
 				D82859AB2C40570E009A28AA /* Options.swift */,
+				D8AE48542C519F190092A2A6 /* SentryId.swift */,
+				D8AE48562C519F820092A2A6 /* SentrySDKInfo.swift */,
 			);
 			path = SentryCore;
 			sourceTree = "<group>";
@@ -268,6 +284,24 @@
 				D82859FD2C407531009A28AA /* SentryPerformanceOptionsTest.swift */,
 			);
 			path = Performance;
+			sourceTree = "<group>";
+		};
+		D8AE484A2C5163740092A2A6 /* Transport */ = {
+			isa = PBXGroup;
+			children = (
+				D8AE484D2C5166120092A2A6 /* SentryDataCategory.swift */,
+				D8AE48512C516A730092A2A6 /* SentryDiscardReason.swift */,
+				D8AE484F2C5166460092A2A6 /* SentryEnvelope.swift */,
+				D8AE484B2C51659A0092A2A6 /* SentryTransport.swift */,
+			);
+			path = Transport;
+			sourceTree = "<group>";
+		};
+		D8AE48532C5179BF0092A2A6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,6 +450,7 @@
 				TargetAttributes = {
 					D82859722C4049F4009A28AA = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 					};
 					D828597A2C4049F4009A28AA = {
 						CreatedOnToolsVersion = 15.4;
@@ -498,6 +533,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8AE484E2C5166120092A2A6 /* SentryDataCategory.swift in Sources */,
+				D8AE48552C519F190092A2A6 /* SentryId.swift in Sources */,
+				D8AE48502C5166460092A2A6 /* SentryEnvelope.swift in Sources */,
+				D8AE48572C519F820092A2A6 /* SentrySDKInfo.swift in Sources */,
+				D8AE484C2C51659A0092A2A6 /* SentryTransport.swift in Sources */,
+				D8AE48522C516A730092A2A6 /* SentryDiscardReason.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -701,6 +742,7 @@
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -731,6 +773,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -741,6 +784,7 @@
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -780,6 +824,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -802,6 +847,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
