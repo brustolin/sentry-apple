@@ -29,12 +29,20 @@
 		D82859F02C40655C009A28AA /* SentryPerformanceOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82859E42C4064B1009A28AA /* SentryPerformanceOptions.swift */; };
 		D82859FB2C407349009A28AA /* Import.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82859FA2C407349009A28AA /* Import.swift */; };
 		D82859FE2C407531009A28AA /* SentryPerformanceOptionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82859FD2C407531009A28AA /* SentryPerformanceOptionsTest.swift */; };
-		D8AE484C2C51659A0092A2A6 /* SentryTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE484B2C51659A0092A2A6 /* SentryTransport.swift */; };
-		D8AE484E2C5166120092A2A6 /* SentryDataCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE484D2C5166120092A2A6 /* SentryDataCategory.swift */; };
-		D8AE48502C5166460092A2A6 /* SentryEnvelope.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE484F2C5166460092A2A6 /* SentryEnvelope.swift */; };
-		D8AE48522C516A730092A2A6 /* SentryDiscardReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE48512C516A730092A2A6 /* SentryDiscardReason.swift */; };
-		D8AE48552C519F190092A2A6 /* SentryId.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE48542C519F190092A2A6 /* SentryId.swift */; };
-		D8AE48572C519F820092A2A6 /* SentrySDKInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE48562C519F820092A2A6 /* SentrySDKInfo.swift */; };
+		D8AE486F2C52DAC40092A2A6 /* SDKInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE48562C519F820092A2A6 /* SDKInfo.swift */; };
+		D8AE48702C52DACC0092A2A6 /* SentryId.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE48542C519F190092A2A6 /* SentryId.swift */; };
+		D8AE48712C52DAD30092A2A6 /* Serializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE486D2C52D9CE0092A2A6 /* Serializable.swift */; };
+		D8AE48722C52DADB0092A2A6 /* TraceContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE48692C52CF360092A2A6 /* TraceContext.swift */; };
+		D8AE48732C52DAE30092A2A6 /* SentryEnvelope.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE484F2C5166460092A2A6 /* SentryEnvelope.swift */; };
+		D8AE48742C52DAE30092A2A6 /* SentryTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE484B2C51659A0092A2A6 /* SentryTransport.swift */; };
+		D8AE48752C52DAE30092A2A6 /* SentryDataCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE484D2C5166120092A2A6 /* SentryDataCategory.swift */; };
+		D8AE48762C52DAE30092A2A6 /* SentryDiscardReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE48512C516A730092A2A6 /* SentryDiscardReason.swift */; };
+		D8AE48792C52DBC20092A2A6 /* SentryEnvelopeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE48772C52DB8A0092A2A6 /* SentryEnvelopeHeader.swift */; };
+		D8AE487D2C52DEDB0092A2A6 /* SentryEnvelopeItemHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE487C2C52DEDB0092A2A6 /* SentryEnvelopeItemHeader.swift */; };
+		D8AE487E2C52DEDE0092A2A6 /* SentryEnvelopeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE487A2C52DEC90092A2A6 /* SentryEnvelopeItem.swift */; };
+		D8AE48822C52E43F0092A2A6 /* jNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE48812C52E43F0092A2A6 /* jNode.swift */; };
+		D8AE48842C537EBE0092A2A6 /* BinaryOutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE48832C537EBE0092A2A6 /* BinaryOutputStream.swift */; };
+		D8AE48862C5388650092A2A6 /* SentryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE48852C5388650092A2A6 /* SentryError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,7 +130,15 @@
 		D8AE484F2C5166460092A2A6 /* SentryEnvelope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentryEnvelope.swift; sourceTree = "<group>"; };
 		D8AE48512C516A730092A2A6 /* SentryDiscardReason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentryDiscardReason.swift; sourceTree = "<group>"; };
 		D8AE48542C519F190092A2A6 /* SentryId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentryId.swift; sourceTree = "<group>"; };
-		D8AE48562C519F820092A2A6 /* SentrySDKInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentrySDKInfo.swift; sourceTree = "<group>"; };
+		D8AE48562C519F820092A2A6 /* SDKInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKInfo.swift; sourceTree = "<group>"; };
+		D8AE48692C52CF360092A2A6 /* TraceContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceContext.swift; sourceTree = "<group>"; };
+		D8AE486D2C52D9CE0092A2A6 /* Serializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serializable.swift; sourceTree = "<group>"; };
+		D8AE48772C52DB8A0092A2A6 /* SentryEnvelopeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentryEnvelopeHeader.swift; sourceTree = "<group>"; };
+		D8AE487A2C52DEC90092A2A6 /* SentryEnvelopeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentryEnvelopeItem.swift; sourceTree = "<group>"; };
+		D8AE487C2C52DEDB0092A2A6 /* SentryEnvelopeItemHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentryEnvelopeItemHeader.swift; sourceTree = "<group>"; };
+		D8AE48812C52E43F0092A2A6 /* jNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jNode.swift; sourceTree = "<group>"; };
+		D8AE48832C537EBE0092A2A6 /* BinaryOutputStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryOutputStream.swift; sourceTree = "<group>"; };
+		D8AE48852C5388650092A2A6 /* SentryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentryError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,10 +234,14 @@
 			children = (
 				D82859AD2C405F95009A28AA /* IntegrationBase */,
 				D8AE484A2C5163740092A2A6 /* Transport */,
+				D8AE48682C52CF270092A2A6 /* Tracing */,
+				D8AE486B2C52D9AA0092A2A6 /* IO */,
+				D8AE487F2C52E3A60092A2A6 /* Tools */,
 				D82859A52C40566C009A28AA /* SentryCore.h */,
 				D82859AB2C40570E009A28AA /* Options.swift */,
 				D8AE48542C519F190092A2A6 /* SentryId.swift */,
-				D8AE48562C519F820092A2A6 /* SentrySDKInfo.swift */,
+				D8AE48562C519F820092A2A6 /* SDKInfo.swift */,
+				D8AE48852C5388650092A2A6 /* SentryError.swift */,
 			);
 			path = SentryCore;
 			sourceTree = "<group>";
@@ -292,6 +312,9 @@
 				D8AE484D2C5166120092A2A6 /* SentryDataCategory.swift */,
 				D8AE48512C516A730092A2A6 /* SentryDiscardReason.swift */,
 				D8AE484F2C5166460092A2A6 /* SentryEnvelope.swift */,
+				D8AE48772C52DB8A0092A2A6 /* SentryEnvelopeHeader.swift */,
+				D8AE487A2C52DEC90092A2A6 /* SentryEnvelopeItem.swift */,
+				D8AE487C2C52DEDB0092A2A6 /* SentryEnvelopeItemHeader.swift */,
 				D8AE484B2C51659A0092A2A6 /* SentryTransport.swift */,
 			);
 			path = Transport;
@@ -302,6 +325,39 @@
 			children = (
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		D8AE48682C52CF270092A2A6 /* Tracing */ = {
+			isa = PBXGroup;
+			children = (
+				D8AE48692C52CF360092A2A6 /* TraceContext.swift */,
+			);
+			path = Tracing;
+			sourceTree = "<group>";
+		};
+		D8AE486B2C52D9AA0092A2A6 /* IO */ = {
+			isa = PBXGroup;
+			children = (
+				D8AE486D2C52D9CE0092A2A6 /* Serializable.swift */,
+				D8AE48832C537EBE0092A2A6 /* BinaryOutputStream.swift */,
+			);
+			path = IO;
+			sourceTree = "<group>";
+		};
+		D8AE487F2C52E3A60092A2A6 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D8AE48802C52E3AE0092A2A6 /* JSON */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		D8AE48802C52E3AE0092A2A6 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				D8AE48812C52E43F0092A2A6 /* jNode.swift */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -533,12 +589,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8AE484E2C5166120092A2A6 /* SentryDataCategory.swift in Sources */,
-				D8AE48552C519F190092A2A6 /* SentryId.swift in Sources */,
-				D8AE48502C5166460092A2A6 /* SentryEnvelope.swift in Sources */,
-				D8AE48572C519F820092A2A6 /* SentrySDKInfo.swift in Sources */,
-				D8AE484C2C51659A0092A2A6 /* SentryTransport.swift in Sources */,
-				D8AE48522C516A730092A2A6 /* SentryDiscardReason.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,9 +605,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8AE48712C52DAD30092A2A6 /* Serializable.swift in Sources */,
+				D8AE487E2C52DEDE0092A2A6 /* SentryEnvelopeItem.swift in Sources */,
+				D8AE48722C52DADB0092A2A6 /* TraceContext.swift in Sources */,
+				D8AE487D2C52DEDB0092A2A6 /* SentryEnvelopeItemHeader.swift in Sources */,
 				D82859AC2C40570E009A28AA /* Options.swift in Sources */,
+				D8AE48702C52DACC0092A2A6 /* SentryId.swift in Sources */,
 				D82859B12C406083009A28AA /* IntegrationOption.swift in Sources */,
+				D8AE486F2C52DAC40092A2A6 /* SDKInfo.swift in Sources */,
+				D8AE48822C52E43F0092A2A6 /* jNode.swift in Sources */,
 				D82859AF2C405FA6009A28AA /* IntegrationBase.swift in Sources */,
+				D8AE48732C52DAE30092A2A6 /* SentryEnvelope.swift in Sources */,
+				D8AE48742C52DAE30092A2A6 /* SentryTransport.swift in Sources */,
+				D8AE48862C5388650092A2A6 /* SentryError.swift in Sources */,
+				D8AE48792C52DBC20092A2A6 /* SentryEnvelopeHeader.swift in Sources */,
+				D8AE48842C537EBE0092A2A6 /* BinaryOutputStream.swift in Sources */,
+				D8AE48752C52DAE30092A2A6 /* SentryDataCategory.swift in Sources */,
+				D8AE48762C52DAE30092A2A6 /* SentryDiscardReason.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,7 +817,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
@@ -762,7 +826,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -795,7 +859,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
@@ -804,7 +868,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -824,7 +888,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -847,7 +910,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -881,7 +943,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
@@ -890,7 +952,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -923,7 +985,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
@@ -932,7 +994,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";

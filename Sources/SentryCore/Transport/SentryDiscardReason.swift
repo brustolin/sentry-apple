@@ -1,5 +1,5 @@
 @objc
-public enum SentryDiscardReason: UInt {
+enum SentryDiscardReason: UInt {
     case beforeSend = 0
     case eventProcessor = 1
     case sampleRate = 2

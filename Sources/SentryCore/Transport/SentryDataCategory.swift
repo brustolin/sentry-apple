@@ -1,7 +1,7 @@
 import Foundation
 
 @objc
-public enum SentryDataCategory: UInt {
+enum SentryDataCategory: UInt {
     case all = 0
     case `default` = 1
     case error = 2
