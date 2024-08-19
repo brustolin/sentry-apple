@@ -24,8 +24,13 @@ public class SDKInfo {
 extension SDKInfo : Serializable {
     public func serialize() -> [String: Any] {
         return [
-            "name": name,
-            "version": version
+            Keys.name: name,
+            Keys.version: version
         ]
+    }
+    
+    private enum Keys {
+        static let name = "name"
+        static let version = "version"
     }
 }

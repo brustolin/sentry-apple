@@ -12,6 +12,22 @@ class SentryEnvelopeItemHeader {
         self.filename = filename
         self.contentType = contentType
     }
+}
+
+extension SentryEnvelopeItemHeader : Serializable {
+    func serialize() -> [String: Any] {
+        var result : [String:Any] = [Keys.type: type, Keys.length: length ]
+        
+        result.addNonNil(Keys.filename, value: filename)
+        result.addNonNil(Keys.contentType, value: contentType)
+        
+        return result
+    }
     
-    
+    private enum Keys {
+        static let filename = "filename"
+        static let contentType = "content_type"
+        static let type = "type"
+        static let length = "length"
+    }
 }

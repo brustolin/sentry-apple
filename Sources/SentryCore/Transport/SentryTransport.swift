@@ -6,7 +6,7 @@ enum FlushResult: Int {
     case alreadyFlushing
 }
 
-protocol Transport {
+protocol SentryTransport {
     func send(envelope: SentryEnvelope)
     func recordLostEvent(category: SentryDataCategory, reason: SentryDiscardReason)
     func recordLostEvent(category: SentryDataCategory, reason: SentryDiscardReason, quantity: UInt)

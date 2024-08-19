@@ -16,3 +16,11 @@ class SentryEnvelopeItem {
         self.data = data
     }
 }
+
+extension SentryEnvelopeItem : BinaryOutputStreamable {
+    func stream(to target: inout any BinaryOutputStream) throws {
+        try header.stream(to: &target)
+        try String.newLine.stream(to: &target)
+        try data.stream(to: &target)
+    }
+}
