@@ -4,6 +4,14 @@ import Foundation
 @objcMembers
 public class Options : OptionsBase {
     public var dsn : String?
+    
+    /**
+     * Whether to send client reports, which contain statistics about discarded events.
+     * @note The default is @c YES.
+     * @see <https://develop.sentry.dev/sdk/client-reports/>
+     */
+    public var sendClientReports: Bool = true
+    
     public let experimental = ExperimentalOptions()
 }
 

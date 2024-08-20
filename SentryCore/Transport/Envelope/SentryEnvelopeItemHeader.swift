@@ -12,6 +12,10 @@ class SentryEnvelopeItemHeader {
         self.filename = filename
         self.contentType = contentType
     }
+    
+    convenience init(itemType: SentryEnvelopeItemType, length: UInt, filename: String? = nil, contentType: String? = nil) {
+        self.init(type: itemType.rawValue, length: length, filename: filename, contentType: contentType)
+    }
 }
 
 extension SentryEnvelopeItemHeader : Serializable {

@@ -66,4 +66,22 @@ extension SentryDataCategory {
             case .unknown: return .unknown
         }
     }
+    
+    func name() -> SentryDataCategoryName {
+        switch self {
+        case .all: return .all            
+        case .default: return .default            
+        case .error: return .error            
+        case .session: return .session            
+        case .transaction: return .transaction            
+        case .attachment: return .attachment            
+        case .userFeedback: return .userFeedback            
+        case .profile: return .profile            
+        case .metricBucket: return .metricBucket            
+        case .replay: return .replay            
+        case .profileChunk: return .profileChunk            
+        case .span: return .span            
+        case .unknown: return .unknown            
+        }
+    }
 }

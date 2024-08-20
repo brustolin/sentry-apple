@@ -1,26 +1,22 @@
 import Foundation
 
-protocol SentryRateLimits {
-    func isRateLimitActive(_ category: SentryDataCategory) -> Bool
-}
-
 protocol SentryEnvelopeRateLimitDelegate: AnyObject {
     func envelopeItemDropped(_ item: SentryEnvelopeItem, withCategory category: SentryDataCategory)
 }
 
-class SentryEnvelopeRateLimit {
+class SentryEnvelopeRateLimiter {
 
-    private let rateLimits: SentryRateLimits
+    let rateLimiter: RateLimiter
     weak var delegate: SentryEnvelopeRateLimitDelegate?
 
-    init(rateLimits: SentryRateLimits) {
-        self.rateLimits = rateLimits
+    init(rateLimiter: RateLimiter) {
+        self.rateLimiter = rateLimiter
     }
 
     func removeRateLimitedItems(from envelope: SentryEnvelope) -> SentryEnvelope {
         let itensToSend = envelope.items.filter { item in
             let category = SentryDataCategory.fromEnvelopeType(itemType: item.header.type)
-            guard !rateLimits.isRateLimitActive(category) else { return true}
+            guard !rateLimiter.isRateLimitActive(category: category) else { return true }
             delegate?.envelopeItemDropped(item, withCategory: category)
             return false
         }

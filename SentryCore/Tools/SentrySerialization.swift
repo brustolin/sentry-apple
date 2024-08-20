@@ -20,4 +20,7 @@ class SentrySerialization {
         let data = try dataWithJsonObject(object)
         try target.stream(data)
     }
+    
+    private init(){
+    }
 }
