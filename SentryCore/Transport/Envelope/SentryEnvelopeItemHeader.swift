@@ -31,3 +31,16 @@ extension SentryEnvelopeItemHeader : Serializable {
         static let length = "length"
     }
 }
+
+enum SentryEnvelopeItemType: String {
+    case event = "event"
+    case session = "session"
+    case userFeedback = "user_report"
+    case transaction = "transaction"
+    case attachment = "attachment"
+    case clientReport = "client_report"
+    case profile = "profile"
+    case replayVideo = "replay_video"
+    case statsd = "statsd"
+    case profileChunk = "profile_chunk"
+}
