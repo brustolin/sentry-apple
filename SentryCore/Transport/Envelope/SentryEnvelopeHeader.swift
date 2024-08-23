@@ -46,6 +46,15 @@ extension SentryEnvelopeHeader : Serializable {
         return result
     }
     
+    convenience init(dictionary: [String: Any]) {
+        let eventId = unwrap(dictionary[Keys.eventId], with: SentryId.init(uuidString:))
+        let trace = unwrap(dictionary[Keys.trace], with: TraceContext.init(dictionary:))
+        let sdk = SDKInfo(dictionary: dictionary)
+        let sentAt = unwrap(dictionary[Keys.sentAt], with: SentryDateUtils.dateFromIso8601String(_:))
+        
+        self.init(eventId: eventId, sdkInfo: sdk, traceContext: trace, sentAt: sentAt)
+    }
+    
     private enum Keys {
         static let eventId = "event_id"
         static let trace = "trace"

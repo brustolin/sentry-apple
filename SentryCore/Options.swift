@@ -3,7 +3,22 @@ import Foundation
 @objc(SentryOptions)
 @objcMembers
 public class Options : OptionsBase {
-    public var dsn : String?
+
+    private(set) var parsedDSN: SentryDSN?
+    
+    public var dsn: String? {
+        get { parsedDSN?.url.absoluteString }
+        set {
+            if let newValue {
+                do {
+                    parsedDSN = try SentryDSN(dsnString: newValue)
+                } catch {
+                    SentryLog.error("Could not parse the DSN (\(newValue)): \(error)")
+                }
+            }
+            else { parsedDSN = nil }
+        }
+    }
     
     /**
      * Whether to send client reports, which contain statistics about discarded events.
@@ -12,7 +27,21 @@ public class Options : OptionsBase {
      */
     public var sendClientReports: Bool = true
     
+    /**
+     * The path to store SDK data, like events, transactions, profiles, raw crash data, etc. We
+     recommend only changing this when the default, e.g., in security environments, can't be accessed.
+     *
+     * @note The default is `NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask,
+     YES)`.
+     */
+    public var cacheDirectoryPath: String
+        
     public let experimental = ExperimentalOptions()
+    
+    public override init() {
+        self.cacheDirectoryPath = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true).first ?? ""
+        super.init()
+    }
 }
 
 @objc(SentryExperimentalOptions)

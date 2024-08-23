@@ -16,7 +16,7 @@ class SentrySerialization {
         try JSONSerialization.jsonObject(with: data)
     }
     
-    static func stream(object: Any, to target: inout any BinaryOutputStream) throws {
+    static func stream<Target>(object: Any, to target: inout Target) throws where Target : BinaryOutputStream {
         let data = try dataWithJsonObject(object)
         try target.stream(data)
     }

@@ -28,6 +28,18 @@ extension SentryEnvelopeItemHeader : Serializable {
         return result
     }
     
+    convenience init?(dictionary: [String: Any]) {
+        guard let type = dictionary[Keys.type] as? String,
+              let length = dictionary[Keys.length] as? Int
+        else { return nil }
+        
+        self.init(type: type,
+                  length: UInt(length),
+                  filename: dictionary[Keys.filename] as? String,
+                  contentType: dictionary[Keys.contentType] as? String
+        )
+    }
+    
     private enum Keys {
         static let filename = "filename"
         static let contentType = "content_type"

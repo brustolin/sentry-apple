@@ -27,8 +27,8 @@ class SentryCurrentDateProvider {
     // The only reason we have a wrapper around system time functions is to enable testing.
     // Using a stateless singleton that can be modified during tests removes the necessity
     // of passing an instance of SentryCurrentDateProvider around or instantiating multiple copies of it.
-    static func setShared(_ shared: SentryCurrentDateProvider) {
-        self.shared = shared
+    static func setShared(_ shared: SentryCurrentDateProvider?) {
+        self.shared = shared ?? SentryCurrentDateProvider()
     }
     #endif
 }

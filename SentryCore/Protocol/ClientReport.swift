@@ -20,9 +20,9 @@ extension ClientReport : Serializable {
 }
 
 // Sentry Envelope from Client Report
-extension SentryEnvelopeItem {
-    convenience init(clientReport: ClientReport) throws {
-        let data = try SentrySerialization.dataWithJsonObject(clientReport.serialize())
-        self.init(header: SentryEnvelopeItemHeader(itemType: .clientReport, length: UInt(data.count)), data: data)
+extension ClientReport {
+    func toSentryEnvelopeItem() throws -> SentryEnvelopeItem {
+        let data = try SentrySerialization.dataWithJsonObject(self.serialize())
+        return SentryEnvelopeItem(type: .clientReport, data: data)
     }
 }

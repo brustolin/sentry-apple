@@ -59,6 +59,22 @@ extension TraceContext : Serializable {
         return information
     }
 
+    convenience init?(dictionary: [String:Any]) {
+        guard let traceId = dictionary[Keys.traceId] as? String,
+              let publicKey = dictionary[Keys.publicKey] as? String
+        else { return nil }
+        
+        self.init(traceId: SentryId(uuidString: traceId),
+                  publicKey: publicKey,
+                  releaseName: dictionary[Keys.release] as? String,
+                  environment: dictionary[Keys.environment] as? String,
+                  transaction: dictionary[Keys.transaction] as? String,
+                  sampleRate: dictionary[Keys.sampleRate] as? String,
+                  sampled: dictionary[Keys.sampled] as? String,
+                  replayId: dictionary[Keys.replayId] as? String
+        )
+    }
+    
     /// Create a SentryBaggage with the information of this SentryTraceContext.
     func toBaggageHeader(original: [String:String]?) -> String {
         var result = original ?? [:]

@@ -33,18 +33,22 @@ enum SentryDataCategoryName: String {
 }
 
 extension SentryDataCategory {
-    static func fromEnvelopeType(itemType: String) -> SentryDataCategory {
-        guard let type = SentryEnvelopeItemType(rawValue: itemType) else { return .default }
+    static func fromEnvelopeType(name: String) -> SentryDataCategory {
+        guard let type = SentryEnvelopeItemType(rawValue: name) else { return .default }
+        return fromEnvelopeType(type)
+    }
+
+    static func fromEnvelopeType(_ type: SentryEnvelopeItemType) -> SentryDataCategory {
         switch type {
-        case .session: return .session
-        case .event: return .error
-        case .transaction: return .transaction
-        case .attachment: return .attachment
-        case .profile: return .profile
-        case .replayVideo: return .replay
-        case .statsd: return .metricBucket
-        case .profileChunk: return .profileChunk
-        default: return .default
+            case .session: return .session
+            case .event: return .error
+            case .transaction: return .transaction
+            case .attachment: return .attachment
+            case .profile: return .profile
+            case .replayVideo: return .replay
+            case .statsd: return .metricBucket
+            case .profileChunk: return .profileChunk
+            default: return .default
         }
     }
     

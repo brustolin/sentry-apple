@@ -29,6 +29,13 @@ extension SDKInfo : Serializable {
         ]
     }
     
+    convenience init?(dictionary: [String: Any]) {
+        guard let name = dictionary[Keys.name] as? String,
+              let version = dictionary[Keys.name] as? String
+        else { return nil }
+        self.init(name: name, version: version)
+    }
+    
     private enum Keys {
         static let name = "name"
         static let version = "version"

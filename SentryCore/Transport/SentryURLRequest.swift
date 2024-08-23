@@ -34,6 +34,26 @@ Sending JSON -------------------------------
         }
     }
     
+    init(storeRequestWithDsn dsn: SentryDSN, filePath: String) throws {
+           self.init(url: dsn.storeEndpoint, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: SentryRequestTimeout)
+           let authHeader = Self.newAuthHeader(url: dsn.url)
+           
+           self.httpMethod = "POST"
+           self.setValue(authHeader, forHTTPHeaderField: "X-Sentry-Auth")
+           self.setValue("application/json", forHTTPHeaderField: "Content-Type")
+           self.setValue("\(SentryMeta.sdkName)/\(SentryMeta.versionString)", forHTTPHeaderField: "User-Agent")
+           
+           let fileURL = URL(fileURLWithPath: filePath)
+           
+           // Setup InputStream for file
+           // This could be improved with a compressable stream
+           let fileStream = InputStream(url: fileURL)
+           fileStream?.open()
+           
+           // Create a stream body for the URLRequest
+           self.httpBodyStream = fileStream
+       }
+    
     init(envelopeRequestWithDsn dsn: SentryDSN, data: Data) {
         let apiURL = dsn.envelopeEndpoint
         let authHeader = Self.newAuthHeader(url: dsn.url)

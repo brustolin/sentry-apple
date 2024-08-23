@@ -1,11 +1,11 @@
 import Foundation
 
-public protocol Serializable : BinaryOutputStreamable {
+protocol Serializable : BinaryOutputStreamable {
     func serialize() -> [String: Any]
 }
 
 extension Serializable {
-    public func stream(to target:inout any BinaryOutputStream) throws {
+    func stream<Target>(to target: inout Target) throws where Target : BinaryOutputStream {
         try SentrySerialization.stream(object: serialize(), to: &target)
     }
 }

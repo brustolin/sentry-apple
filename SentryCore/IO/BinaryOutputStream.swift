@@ -4,18 +4,18 @@ public protocol BinaryOutputStream {
     mutating func stream(_ data: any DataProtocol) throws
 }
 
-public protocol BinaryOutputStreamable {
-    func stream(to target: inout any BinaryOutputStream) throws
+protocol BinaryOutputStreamable {
+    func stream<Target>(to target: inout Target) throws where Target : BinaryOutputStream
 }
 
 extension Data : BinaryOutputStreamable {
-    public func stream(to target: inout any BinaryOutputStream) throws {
+    func stream<Target>(to target: inout Target) throws where Target : BinaryOutputStream {
         try target.stream(self)
     }
 }
 
 extension String : BinaryOutputStreamable {
-  public func stream(to target: inout any BinaryOutputStream) throws {
+    func stream<Target>(to target: inout Target) throws where Target: BinaryOutputStream {
         guard let data = self.data(using: .utf8) else {
             throw SentryError("Failed to convert string to UTF-8 data")
         }

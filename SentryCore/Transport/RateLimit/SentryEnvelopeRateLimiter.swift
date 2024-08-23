@@ -15,7 +15,7 @@ class SentryEnvelopeRateLimiter {
 
     func removeRateLimitedItems(from envelope: SentryEnvelope) -> SentryEnvelope {
         let itensToSend = envelope.items.filter { item in
-            let category = SentryDataCategory.fromEnvelopeType(itemType: item.header.type)
+            let category = SentryDataCategory.fromEnvelopeType(name: item.header.type)
             guard !rateLimiter.isRateLimitActive(category: category) else { return true }
             delegate?.envelopeItemDropped(item, withCategory: category)
             return false
