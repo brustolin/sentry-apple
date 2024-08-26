@@ -94,7 +94,6 @@ class SentryHttpTransport : SentryTransport, SentryEnvelopeManagerDelegate, Sent
             SentryLog.debug("Finished flushing.")
             return .success
         } else {
-            SentryLog.debug("Finished timed out.")
             return .timedOut
         }
     }
